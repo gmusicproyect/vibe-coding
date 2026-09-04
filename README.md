@@ -22,7 +22,7 @@ vibe-coding/
 
 | # | Clase | Temas clave |
 |---|-------|-------------|
-| _pendiente_ | | |
+| 01 | [El stack de Vibe Coding y cómo elegirlo](curso-vibe-coding/clases/clase-01-stack-vibe-coding.md) | Criterios de stack, IDEs vs. ADEs, Golden Path, Vercel vs. VPS, RLS |
 
 ---
 
