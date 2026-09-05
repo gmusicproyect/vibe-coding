@@ -25,6 +25,7 @@ vibe-coding/
 | 01 | [3 preguntas antes de elegir tu stack](curso-vibe-coding/clases/clase-01-stack-vibe-coding.md) | Criterios de stack, IDEs vs. ADEs, Golden Path, Vercel vs. VPS, RLS |
 | 02 | [Cómo tunear tu Claude Code](curso-vibe-coding/clases/clase-02-tunear-claude-code.md) | Niveles de control (Sugerencia/Regla/Pared), Output style, Hooks de seguridad, GLM 5.3, multi-sesión |
 | 03 | [Cómo dejar de empezar de cero cada mañana](curso-vibe-coding/clases/clase-03-segundo-cerebro.md) | Arquitectura de 3 cajones (Raw/Wiki/CLAUDE.md), entidades y apodos, Daily Harvest, grafos vs. expediente |
+| 04 | [El que encuentra el bug no lo arregla](curso-vibe-coding/clases/clase-04-adversarial-review.md) | Principio del autógrafo, plugin de Codex, trampas de auditoría, auditoría visual con browser tools, checkpoints |
 
 ---
 
