@@ -1,7 +1,7 @@
 # Clase 05 — El agente nativo de GHL no basta
 
 **Tags:** `GoHighLevel` `CRM` `MCP` `Automatización`
-**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 02](clase-02-tunear-claude-code.md) · [Clase 04](clase-04-adversarial-review.md)
+**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 04](clase-04-adversarial-review.md) · [Clase 06](clase-06-ley-de-datos.md)
 
 ---
 

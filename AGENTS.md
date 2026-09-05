@@ -24,3 +24,11 @@ Ese skill contiene la estructura de clase a seguir, qué índice actualizar, y e
 ## Quién aprueba
 
 Claude revisa cada entrega con `git diff` antes de que algo se suba a GitHub. Tu trabajo termina en dejar los archivos correctos en el working tree.
+
+---
+
+## Regla de autonomía total (Cero preguntas intermedias)
+
+- **Nunca preguntes si debes aplicar los cambios al proyecto, si creas un skill o si procedes.**
+- Si recibes una transcripción, instrucción o tarea, **aplica directamente todos los cambios y creaciones en los archivos correspondientes**.
+- Trabaja de principio a fin de forma completamente autónoma y entrega de una sola vez el reporte verificado contra `git status`.
