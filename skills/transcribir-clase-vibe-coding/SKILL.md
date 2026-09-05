@@ -92,7 +92,16 @@ listas para pasos o conceptos enumerados.]
 - El ejercicio nunca requiere una herramienta o concepto que no se haya visto todavía en el curso
 - No inventar contenido que no esté en la fuente. Si algo no quedó claro, marcar `[PENDIENTE: confirmar con Juan]` en vez de rellenar con una suposición
 
-### Paso 4 — Actualizar los índices
+### Paso 4 — Verificar replicabilidad antes de entregar
+
+El objetivo no es "no perder nada" de la transcripción — es que el video ya no haga falta para replicar lo enseñado. Antes de dar la clase por terminada, revisar contra la fuente:
+
+- Todo paso práctico, demo o acción en pantalla que el instructor haya mostrado (comandos exactos, clicks, configuración, nombres de archivos/botones) tiene que quedar **literal** en el contenido o en el Ejercicio práctico — no resumido de forma tan genérica que se vuelva irreproducible.
+- Si la fuente muestra una secuencia de pasos concretos (ej. "abrí esto, hice clic acá, escribí este comando"), esa secuencia va como lista numerada o bloque de código, no como una frase narrativa tipo "el instructor configuró la herramienta".
+- Preguntarse: *¿un alumno que solo lee este archivo, sin haber visto el video, puede ejecutar el mismo procedimiento y llegar al mismo resultado?* Si la respuesta es no en algún paso clave, ese paso está mal sintetizado — hay que ampliarlo, no dejarlo implícito.
+- Esto no contradice el límite de 70-110 líneas ni la regla de "sin relleno": lo que se recorta es la verborrea y las repeticiones, nunca el detalle operativo de un paso que el alumno necesita para reproducirlo.
+
+### Paso 5 — Actualizar los índices
 
 En el mismo lote de cambios:
 1. `README.md` (raíz) → agregar la fila a la tabla de "Clases"
@@ -114,7 +123,8 @@ En el mismo lote de cambios:
 | Archivo de 200+ líneas | Se transcribió todo literal en vez de sintetizar | Volver al Paso 1: encontrar la idea central y cortar lo que no la sirve |
 | Falta el Ejercicio práctico | Se trató como sección opcional | Es obligatoria |
 | Ejercicio requiere algo de una clase futura | No se revisó el orden del curso | Solo usar herramientas/conceptos ya cubiertos hasta esa clase |
-| Índice no actualizado | Se creó el archivo pero no se tocó el README | Repetir el Paso 4 |
+| Índice no actualizado | Se creó el archivo pero no se tocó el README | Repetir el Paso 5 |
+| Paso práctico narrado en vez de detallado (ej. "configuró el proyecto" sin decir cómo) | Se priorizó la síntesis por encima de la replicabilidad | Volver a la fuente y extraer el comando/click/configuración exacta que se mostró |
 
 ---
 
