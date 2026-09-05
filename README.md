@@ -23,6 +23,8 @@ vibe-coding/
 | # | Clase | Temas clave |
 |---|-------|-------------|
 | 01 | [El stack de Vibe Coding y cómo elegirlo](curso-vibe-coding/clases/clase-01-stack-vibe-coding.md) | Criterios de stack, IDEs vs. ADEs, Golden Path, Vercel vs. VPS, RLS |
+| 02 | [Tuneá tu Claude Code: configuración, hooks y cambio de motor](curso-vibe-coding/clases/clase-02-tunear-claude-code.md) | Niveles de control (Sugerencia/Regla/Pared), Output style, Hooks de seguridad, GLM 5.3, multi-sesión |
+| 03 | [Segundo cerebro para agentes: Obsidian, LLM Wiki y grafos](curso-vibe-coding/clases/clase-03-segundo-cerebro.md) | Arquitectura de 3 cajones (Raw/Wiki/CLAUDE.md), entidades y apodos, Daily Harvest, grafos vs. expediente |
 
 ---
 
