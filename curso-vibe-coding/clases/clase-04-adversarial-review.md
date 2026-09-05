@@ -7,73 +7,70 @@
 
 ## Idea central
 
-Pedirle al mismo modelo que escribió tu código que lo revise produce una validación complaciente ("el autógrafo"), no una auditoría real. Una revisión adversarial introduce un segundo modelo independiente (como OpenAI Codex o modelos open source en OpenCode) instruido exclusivamente para destruir la solución, encontrar brechas de seguridad y auditar la interfaz visual antes de llegar a producción.
+Pedirle al mismo modelo que escribió tu código que lo revise produce una validación complaciente ("el autógrafo"), no una auditoría real. Una revisión adversarial introduce un segundo modelo independiente (OpenAI Codex) con el único objetivo de destruir la solución y hallar brechas de seguridad o fallos visuales. La regla de oro operativa es estricta: **el que audita no repara**. Codex encuentra los fallos; Claude Code aplica las correcciones.
 
 ---
 
-## El principio del autógrafo vs. auditoría adversarial
+## Instalación y configuración del plugin oficial de Codex
 
-| Enfoque | Quién revisa | Incentivo del prompt | Resultado típico |
-|---------|--------------|----------------------|------------------|
-| **Autógrafo** | El mismo modelo constructor | "¿Está bien este código?" | Confirma sus propios sesgos y pasa por alto errores sutiles. |
-| **Adversarial** | Segundo modelo independiente | "Encuentra razones por las que esto NO debe ir a producción." | Identifica fugas de memoria, edge cases y fallos lógicos graves. |
+Para auditar sin salir del contexto de Claude Code ni copiar y pegar entre ventanas:
 
-La regla operativa es estricta: **el que audita no repara**. El auditor adversarial solo lista fallos con severidad y pruebas de concepto; el modelo constructor (Claude Code) recibe el reporte y aplica las correcciones.
+1. **Instalar el plugin:** Ejecuta `/plugin` en Claude Code → selecciona `Manage Plugins` → busca e instala `Codex` (`@openai/codex` desde Marketplace).
+2. **Autenticar:** Ejecuta en el prompt de Claude `!codex login` (o en terminal `codex login`). Abrirá el navegador para iniciar sesión en OpenAI; Claude detecta la salida y confirma la sesión automáticamente.
+3. **Verificar estado:** Ejecuta `/codex:status` para confirmar conexión con el CLI y verificar si hay tareas activas.
 
 ---
 
-## Rutas de ejecución: Plugin de Codex y alternativas
+## Comandos y flags de ejecución adversarial
 
-Para ejecutar revisiones sin fricción existen tres vías según presupuesto y stack:
+| Comando / Flag | Función operativa |
+|----------------|-------------------|
+| `/codex:adversarial-review` | Lanza la auditoría del segundo modelo sobre el código actual. |
+| `--base main` | Compara los cambios de la rama actual contra la rama base `main`. |
+| `--background` | Ejecuta la auditoría en segundo plano para seguir chateando con Claude. |
+| `/codex:cancel` | Cancela un trabajo de auditoría que esté corriendo en background. |
+| `npm i -g @openai/codex-security` | Instala el CLI de Codex Security para escaneos fuera de Claude Code. |
+| `codex-security scan . --budget 5` | Escaneo de seguridad independiente con tope presupuestario (\$5 USD). |
 
-1. **Plugin oficial de Codex en Claude Code:** Se invoca vía `/codex adversarial-review` pasando la rama o el diff del commit.
-2. **Extensión en IDE (VS Code / Cursor):** Permite lanzar agentes de OpenAI o modelos locales en paralelo sobre archivos abiertos.
-3. **OpenCode / Modelos abiertos:** Permite utilizar modelos más económicos o locales (DeepSeek, GLM) para auditorías continuas sin disparar el costo de API.
+> Carlos recomienda usar el plugin `/codex:adversarial-review` integrado dentro de Claude Code: permite que Claude lea el reporte directamente en la conversación y aplique los parches sin fricción manual.
 
 ---
 
 ## Las tres trampas al auditar con LLMs
 
-1. **Filtros de seguridad (Safety filters):** Prompts con palabras como "hackea" o "pentest" bloquean el modelo. Debe enmarcarse como *análisis estático defensivo de seguridad OWASP*.
-2. **Secuestro por directivas (`AGENTS.md` / `CLAUDE.md`):** Si el archivo del proyecto afirma que "la autenticación es segura", el auditor asume la premisa como cierta. Solución: auditar con `--project-doc-max-bytes 0` o ignorar directivas contextuales.
-3. **El auditor que parcha:** Si dejas que el auditor modifique el código directamente, pierdes la separación de poderes y reaparece el autógrafo.
+1. **Filtros de seguridad (Safety filters):** Prompts con palabras como "hackea" o "haz un pentest" son bloqueados por las políticas de OpenAI. Debe enmarcarse como *análisis estático defensivo de seguridad OWASP*.
+2. **Secuestro por directivas (`AGENTS.md` / `CLAUDE.md`):** Si tu archivo dice "la autenticación ya es segura con Supabase", el auditor asume la premisa como un hecho y no revisa. Ejecuta con `--project-doc-max-bytes 0` o aísla el archivo a auditar.
+3. **El auditor que parcha:** Si dejas que Codex aplique los fixes, asume el rol de constructor y queda ciego ante sus propios errores. Codex lista hallazgos; Claude Code corrige.
 
 ---
 
-## Auditoría visual de interfaces
+## Auditoría visual de interfaces (UI)
 
-Los modelos de lenguaje son ciegos al renderizado real en pantalla (pueden aprobar botones ilegibles de 19px o contraste gris sobre gris). Para interfaces de usuario:
-
-- **Browser tools (Playwright / DevTools / Station):** Se navega la aplicación de forma headless, capturando capturas de pantalla y el árbol de accesibilidad (AOM).
-- **Inspección multimodal:** El segundo modelo audita el screenshot contra estándares de diseño, contraste WCAG y estados interactivos (hover, mobile responsive, pantallas de error).
-
----
-
-## Cuándo auditar: Checkpoints críticos
-
-No tiene sentido auditar cada línea o comando (arruina el flujo de Vibe Coding). La auditoría adversarial se reserva para momentos clave:
-
-- Antes de abrir un Pull Request o hacer merge a `main`.
-- Cambios en capas de autenticación, pagos o Row Level Security (RLS).
-- Migraciones de esquema en base de datos.
-- Lanzamiento de flujos críticos de usuario hacia producción.
+Los LLMs son ciegos al renderizado real (botones de 19px, contrastes fallidos WCAG o layouts rotos). Para darles ojos:
+- **Herramientas headless:** Integra **Playwright** o **Station** (alternativa liviana y económica para agentes que captura pantallas y navega flujos).
+- **Inspección multimodal:** El agente toma screenshots y el árbol de accesibilidad (AOM), pasándoselos al segundo modelo para auditar estados interactivos y pantallas de error.
+- **Higiene de `.gitignore`:** Agrega siempre `screenshots/`, grabaciones `.mp4` y volcados `.csv` de prueba al `.gitignore` para no subir datos sensibles ni basura al repositorio.
 
 ---
 
 ## 🎯 Ejercicio práctico
 
-**Ejercicio 1:** Elige una función o endpoint crítico de tu proyecto actual (por ejemplo, registro de usuarios o consulta con RLS). Pásaselo a un segundo modelo distinto al que lo programó con el siguiente prompt: *"Actúa como un auditor de seguridad implacable. No propongas código ni halagos; lista los 3 peores vectores de ataque o fallos lógicos por los cuales este archivo fallará en producción"*. Entrega ese reporte a Claude Code para que aplique los parches.
+**Ejercicio 1 (Reproducción guiada):**
+1. Instala el plugin en Claude Code con `/plugin` → `Manage Plugins` → `Codex` y autentica con `!codex login`.
+2. En una rama de trabajo, crea o modifica un endpoint con autenticación o consulta SQL.
+3. Ejecuta en Claude Code: `/codex:adversarial-review --base main`.
+4. Cuando Codex devuelva el reporte de vulnerabilidades, indícale a Claude Code: *"Analiza los hallazgos reportados por Codex y aplica los parches de seguridad estrictamente necesarios sin modificar la lógica de negocio"*.
 
-**Ejercicio 2 (avanzado):** Configura un script o hook de pre-commit que tome el `git diff` del área de staging y ejecute una revisión adversarial automática con un modelo secundario antes de permitir el commit.
+**Ejercicio 2 (avanzado):** Instala `@openai/codex-security` globalmente y corre un escaneo local de tu proyecto limitando el costo (`codex-security scan . --budget 2 --reasoning low`). Compara el archivo `report.md` generado contra el resultado del plugin integrado.
 
 ---
 
 ## 💡 Tip
 
-Cuando audites seguridad en backend, corre al auditor pasándole únicamente el archivo de rutas y la función sin el contexto de tus reglas generales. Forzar al modelo a evaluar el código de forma aislada e ignorante del resto del sistema revela de inmediato supuestos no validados y validaciones faltantes.
+No audites cada línea de código; quema tokens y frena el flujo. Reserva la auditoría adversarial para **checkpoints críticos**: antes de un Pull Request a `main`, al tocar Row Level Security (RLS), al alterar esquemas con migraciones SQL o al publicar endpoints de pagos/auth.
 
 ---
 
 ## ⚠️ Error común
 
-Permitir que el modelo auditor genere y aplique directamente el fix sobre el código. Cuando el auditor repara, asume el rol de constructor y queda ciego ante las regresiones que él mismo introduce; la auditoría y la remediación deben mantenerse en agentes separados.
+Pedirle a Claude Code "¿ves algún fallo en este código?" sobre el archivo que él mismo acaba de generar. Claude confirmará que su solución es óptima. Para auditar de verdad, debes forzar el incentivo negativo con un segundo modelo o con un prompt de destrucción explícito.
