@@ -91,6 +91,7 @@ listas para pasos o conceptos enumerados.]
 - El **Ejercicio práctico es obligatorio**, no opcional como el Tip o el Error común
 - El ejercicio nunca requiere una herramienta o concepto que no se haya visto todavía en el curso
 - No inventar contenido que no esté en la fuente. Si algo no quedó claro, marcar `[PENDIENTE: confirmar con Juan]` en vez de rellenar con una suposición
+- **Nunca usar notación LaTeX** (`$\rightarrow$`, `$\times$`, etc.) — GitHub no la renderiza y queda como texto crudo. Para flechas en rutas de menú usar el carácter simple `→`; para el resto, texto plano
 
 ### Paso 4 — Verificar replicabilidad antes de entregar
 
