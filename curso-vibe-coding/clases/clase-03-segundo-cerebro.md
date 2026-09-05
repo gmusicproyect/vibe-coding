@@ -1,4 +1,4 @@
-# Clase 03 — Segundo cerebro para agentes: Obsidian, LLM Wiki y grafos
+# Clase 03 — Cómo dejar de empezar de cero cada mañana
 
 **Tags:** `Obsidian` `LLM Wiki` `Memoria` `Grafos`
 **Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 02](clase-02-tunear-claude-code.md)

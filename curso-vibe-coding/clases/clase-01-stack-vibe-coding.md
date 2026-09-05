@@ -1,4 +1,4 @@
-# Clase 01 — El stack de Vibe Coding y cómo elegirlo
+# Clase 01 — 3 preguntas antes de elegir tu stack
 
 **Tags:** `Vibe Coding` `Stack` `Next.js` `Supabase`
 **Conecta con:** Inicio del curso · [Clase 02](clase-02-tunear-claude-code.md)

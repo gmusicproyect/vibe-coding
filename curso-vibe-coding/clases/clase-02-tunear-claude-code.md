@@ -1,4 +1,4 @@
-# Clase 02 — Tuneá tu Claude Code: configuración, hooks y cambio de motor
+# Clase 02 — Cómo tunear tu Claude Code
 
 **Tags:** `Claude Code` `Hooks` `Configuración` `GLM`
 **Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 03](clase-03-segundo-cerebro.md)
