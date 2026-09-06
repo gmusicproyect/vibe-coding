@@ -102,7 +102,15 @@ El objetivo no es "no perder nada" de la transcripción — es que el video ya n
 - Preguntarse: *¿un alumno que solo lee este archivo, sin haber visto el video, puede ejecutar el mismo procedimiento y llegar al mismo resultado?* Si la respuesta es no en algún paso clave, ese paso está mal sintetizado — hay que ampliarlo, no dejarlo implícito.
 - Esto no contradice el límite de 70-110 líneas ni la regla de "sin relleno": lo que se recorta es la verborrea y las repeticiones, nunca el detalle operativo de un paso que el alumno necesita para reproducirlo.
 
-### Paso 5 — Actualizar los índices
+### Paso 5 — Verificar que el ejercicio prueba el propósito de la clase
+
+No basta con que el ejercicio sea replicable — tiene que probar específicamente el concepto que la clase más enfatiza, no un concepto adyacente más fácil de ejercitar.
+
+1. Identifica cuál es la afirmación central que se repite entre la Idea central, el Tip y el Error común (es la que el instructor insiste más en la fuente).
+2. Verifica que el Ejercicio 1 ejercite exactamente esa afirmación, no una tarea relacionada pero más superficial. Ejemplo real de este curso: una clase insistía en que los hooks son "paredes infranqueables" en las que hay que confiar más que en instrucciones de texto, pero el ejercicio solo pedía cambiar una configuración de texto — nunca construir un hook. Eso es un ejercicio que no prueba el propósito, aunque sea replicable.
+3. Si el ejercicio no ejercita la afirmación central, reescríbelo para que sí lo haga — aunque eso signifique que sea más largo o más técnico que el resto.
+
+### Paso 6 — Actualizar los índices
 
 En el mismo lote de cambios:
 1. `README.md` (raíz) → agregar la fila a la tabla de "Clases"
@@ -124,8 +132,9 @@ En el mismo lote de cambios:
 | Archivo de 200+ líneas | Se transcribió todo literal en vez de sintetizar | Volver al Paso 1: encontrar la idea central y cortar lo que no la sirve |
 | Falta el Ejercicio práctico | Se trató como sección opcional | Es obligatoria |
 | Ejercicio requiere algo de una clase futura | No se revisó el orden del curso | Solo usar herramientas/conceptos ya cubiertos hasta esa clase |
-| Índice no actualizado | Se creó el archivo pero no se tocó el README | Repetir el Paso 5 |
+| Índice no actualizado | Se creó el archivo pero no se tocó el README | Repetir el Paso 6 |
 | Paso práctico narrado en vez de detallado (ej. "configuró el proyecto" sin decir cómo) | Se priorizó la síntesis por encima de la replicabilidad | Volver a la fuente y extraer el comando/click/configuración exacta que se mostró |
+| Ejercicio replicable pero que no prueba lo central de la clase | Se eligió la tarea más fácil de ejercitar en vez de la que el instructor más enfatizó | Aplicar el Paso 5: identificar la afirmación que se repite en Idea central/Tip/Error común y asegurarse de que el ejercicio la ejercite directamente |
 
 ---
 
