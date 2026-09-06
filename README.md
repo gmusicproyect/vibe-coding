@@ -29,6 +29,7 @@ vibe-coding/
 | 05 | [El agente nativo de GHL no basta](curso-vibe-coding/clases/clase-05-gohighlevel.md) | Tiers y snapshots, re-billing, MCP multicuenta, webhooks vs IA nativa, aislamiento de datos sensibles |
 | 06 | [Nueva Ley de Datos: aplica aunque no vivas en Chile](curso-vibe-coding/clases/clase-06-ley-de-datos.md) | Ley 21.719 (RGPD), minimización técnica, derechos ARCO+, fin de cajas negras, EIPD, skill revisar-datos-personales |
 | 07 | [Aprende a decir las cosas por su nombre](curso-vibe-coding/clases/clase-07-ui-tokens.md) | UI sin AI Slop, Design Tokens en 3 capas, Tailwind v4 @theme, brand.json, Showcase/UI Kit, Criterio CLI, Agentation |
+| 08 | [Claude Code desde cero: skills, MCPs y seguridad](curso-vibe-coding/clases/clase-08-skills-mcps-seguridad.md) | Higiene de contexto, Prompt Caching (5 min), subagentes con fork, /insights, SDD/MoSCoW, handoff.md, OWASP y RLS |
 
 ---
 
