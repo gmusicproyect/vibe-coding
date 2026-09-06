@@ -22,6 +22,20 @@ Claude Code opera como un arnés agéntico cuyo rendimiento depende de la higien
 
 ---
 
+## Skill vs. MCP: la diferencia que confunde a casi todos
+
+| | Skill | MCP |
+|--|-------|-----|
+| **Qué es** | Instrucciones procedurales — cómo pensar/actuar ante una tarea | Servidor que expone herramientas para conectarte a un servicio externo |
+| **Costo** | Se carga bajo demanda, según el tamaño del archivo | Cada *tool call* consume tokens y agrega latencia de conexión |
+| **Cuándo crear uno** | Repetiste la misma instrucción más de 2 veces | Necesitas que el agente lea/escriba en un servicio externo (Figma, GHL, etc.) |
+
+Claude Code trae embebido el **Skill Creator**: pídele "usa el skill creator y créame un skill para [tarea]" y te genera la carpeta con `SKILL.md` completo, sin que tengas que escribirlo desde cero.
+
+**Alcance de instalación:** los skills y MCPs a nivel de usuario (`~/.claude/`) están disponibles en cualquier proyecto; los de nivel proyecto solo en esa carpeta. No cargues 500 skills a nivel usuario "por si acaso" — cada uno se lee en cada sesión aunque no lo uses, y satura el contexto desde el primer mensaje.
+
+---
+
 ## Higiene de contexto: MCPs, Prompt Caching y subagentes con Fork
 
 Mantener limpia la ventana de contexto es indispensable para evitar que el modelo compacte memoria y empiece a alucinar:

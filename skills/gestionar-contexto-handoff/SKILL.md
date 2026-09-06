@@ -7,7 +7,7 @@
 
 ## Cuándo usar este skill
 
-Cuando una sesión de desarrollo en Claude Code alcance o supere el 20% de la ventana de contexto (o tras 20-30 peticiones iterativas), cuando se concluya una feature o módulo del blueprint, o cuando sea necesario pausar el trabajo para retomarlo más tarde o delegarlo a otro agente o desarrollador sin degradación por alucinación.
+Cuando una sesión de desarrollo en Claude Code pase el 20% de la ventana de contexto (señal temprana de riesgo de alucinación, o tras 20-30 peticiones iterativas) y a más tardar al llegar al 50% (umbral duro — no lo cruces sin generar el handoff), cuando se concluya una feature o módulo del blueprint, o cuando sea necesario pausar el trabajo para retomarlo más tarde o delegarlo a otro agente o desarrollador sin degradación por alucinación.
 
 ---
 
@@ -28,7 +28,7 @@ Antes de cerrar o transferir la sesión, revisa la saturación de la memoria:
 /context
 ```
 
-Si el consumo supera el 20%, o si se observan advertencias de compactación de memoria, no inicies una nueva funcionalidad en este chat: procede inmediatamente a generar el handoff.
+A partir del 20% ya hay riesgo de alucinación — evalúa si conviene cerrar. Al llegar al 50%, o si se observan advertencias de compactación de memoria, no inicies una nueva funcionalidad en este chat bajo ningún motivo: procede inmediatamente a generar el handoff.
 
 ### Paso 2 — Generar el archivo de traspaso (`handoff.md`)
 
