@@ -1,4 +1,4 @@
-# Clase 07 — Aprende a decir las cosas por su nombre
+# Clase 07 — UI que no grita IA: componentes y design tokens
 
 **Tags:** `UI Design` `Design Tokens` `Tailwind v4` `Anti-Slop`
 **Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 02](clase-02-tunear-claude-code.md) · [Clase 04](clase-04-adversarial-review.md)

@@ -28,8 +28,9 @@ vibe-coding/
 | 04 | [El que encuentra el bug no lo arregla](curso-vibe-coding/clases/clase-04-adversarial-review.md) | Principio del autógrafo, plugin de Codex, trampas de auditoría, auditoría visual con browser tools, checkpoints |
 | 05 | [El agente nativo de GHL no basta](curso-vibe-coding/clases/clase-05-gohighlevel.md) | Tiers y snapshots, re-billing, MCP multicuenta, webhooks vs IA nativa, aislamiento de datos sensibles |
 | 06 | [Nueva Ley de Datos: aplica aunque no vivas en Chile](curso-vibe-coding/clases/clase-06-ley-de-datos.md) | Ley 21.719 (RGPD), minimización técnica, derechos ARCO+, fin de cajas negras, EIPD, skill revisar-datos-personales |
-| 07 | [Aprende a decir las cosas por su nombre](curso-vibe-coding/clases/clase-07-ui-tokens.md) | UI sin AI Slop, Design Tokens en 3 capas, Tailwind v4 @theme, brand.json, Showcase/UI Kit, Criterio CLI, Agentation |
-| 08 | [Claude Code desde cero: skills, MCPs y seguridad](curso-vibe-coding/clases/clase-08-skills-mcps-seguridad.md) | Higiene de contexto, Prompt Caching (5 min), subagentes con fork, /insights, SDD/MoSCoW, handoff.md, OWASP y RLS |
+| 07 | [UI que no grita IA: componentes y design tokens](curso-vibe-coding/clases/clase-07-ui-tokens.md) | UI sin AI Slop, Design Tokens en 3 capas, Tailwind v4 @theme, brand.json, Showcase/UI Kit, Criterio CLI, Agentation |
+| 08 | [UX + Seguridad en Web Apps con IA](curso-vibe-coding/clases/clase-08-ux-seguridad.md) | Historia B-17 y UX, 4 estados obligatorios, 6 reglas de formularios, RLS en Supabase, prevención service_role en frontend |
+| 09 | [Claude Code desde Cero: Skills, MCPs y seguridad](curso-vibe-coding/clases/clase-09-claude-code-desde-cero.md) | Higiene de contexto, Prompt Caching (5 min), subagentes con fork, /insights, SDD/MoSCoW, handoff.md, OWASP y RLS |
 
 ---
 

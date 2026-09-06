@@ -1,7 +1,7 @@
-# Clase 08 — Claude Code desde cero: skills, MCPs y seguridad
+# Clase 09 — Claude Code desde Cero: Skills, MCPs y seguridad
 
 **Tags:** `Fundamentos` `Contexto` `MCPs` `Seguridad OWASP`
-**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 02](clase-02-tunear-claude-code.md) · [Clase 04](clase-04-adversarial-review.md)
+**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 02](clase-02-tunear-claude-code.md) · [Clase 04](clase-04-adversarial-review.md) · [Clase 08](clase-08-ux-seguridad.md)
 
 ---
 
