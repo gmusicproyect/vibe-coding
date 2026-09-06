@@ -59,6 +59,8 @@ GoHighLevel (GHL) centraliza canales de venta, automatizaciones y embudos bajo u
 
 **Ejercicio 2 (avanzado):** Conecta tu sesión de Claude Code al servidor MCP de GoHighLevel. Pídele al agente que consulte la lista de contactos creados en la última hora y aplique automáticamente el tag `Lead Calificado` a quienes tengan teléfono registrado.
 
+*Por qué importa este ejercicio y no usar el `Conversation AI` nativo para lo mismo: el módulo nativo razona con tool calling directo sobre GHL y alucina fácil ante lógica condicional (ej. "solo etiqueta si tiene teléfono Y no ha comprado antes"). Al procesar esa lógica en Claude Code y solo enviar el resultado final por webhook/MCP, el razonamiento complejo queda fuera del módulo que falla.*
+
 ---
 
 ## 💡 Tip

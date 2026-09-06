@@ -56,7 +56,9 @@ Al nombrar sesiones activas con `/rename <nombre>` (ej. `/rename orquestador` y 
 
 **Ejercicio 1:** Abre la configuración de tu Claude Code con `/config` y cambia el `outputStyle` a `concise`. Ejecuta una consulta técnica y verifica que la respuesta vaya directo al grano sin introducciones ni halagos.
 
-**Ejercicio 2 (avanzado):** Abre dos terminales en el mismo proyecto. Renombra la primera con `/rename orquestador` y la segunda con `/rename ejecutor`. Pídele al orquestador que analice un cambio y le envíe la instrucción de implementación a `@ejecutor` verificando la respuesta en la segunda terminal.
+**Ejercicio 2 (el que de verdad importa — construir una pared):** Crea en `~/.claude/hooks/` un script (bash o Python) que reciba el JSON de un evento `PreToolUse` sobre `Write|Edit`, y si el `file_path` termina en `.env`, bloquee la escritura devolviendo `permissionDecision: "deny"`. Referencia ese script en `settings.json`. Pruébalo pidiéndole a Claude Code que escriba algo en un `.env` de prueba: **debe bloquearse solo**, sin que se lo pidas en el chat. Esa es la diferencia real entre una sugerencia (nivel 1) y una pared (nivel 3).
+
+**Ejercicio 3 (avanzado):** Abre dos terminales en el mismo proyecto. Renombra la primera con `/rename orquestador` y la segunda con `/rename ejecutor`. Pídele al orquestador que analice un cambio y le envíe la instrucción de implementación a `@ejecutor` verificando la respuesta en la segunda terminal.
 
 ---
 
