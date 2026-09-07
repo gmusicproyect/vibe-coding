@@ -12,6 +12,8 @@ Base de conocimiento del curso **Vibe Coding** de Imperio Digital: clases, skill
 vibe-coding/
 ├── curso-vibe-coding/
 │   └── clases/                 → Resumen de cada clase en Markdown
+├── bonos/                      → Módulos extra (herramientas externas específicas)
+│   └── forge-studio/           → Estudio de contenido y carruseles a costo $0
 ├── skills/                     → Skills reutilizables (.md)
 └── recursos/plantillas/        → CLAUDE.md global y por proyecto
 ```
@@ -33,6 +35,14 @@ vibe-coding/
 | 09 | [Claude Code desde Cero: Skills, MCPs y seguridad](curso-vibe-coding/clases/clase-09-claude-code-desde-cero.md) | Higiene de contexto, Prompt Caching (5 min), subagentes con fork, /insights, SDD/MoSCoW, handoff.md, OWASP y RLS |
 | 10 | [El Agente de 5 USD que reemplaza tu flujo entero](curso-vibe-coding/clases/clase-10-agente-5usd-cloudflare.md) | Cloudflare Workers, Agents as a Service (AaaS), OpenRouter, Durable Objects, Wrangler CLI, Rate Limiting |
 | 11 | [Cómo gestionar clientes y contexto con Claude Code](curso-vibe-coding/clases/clase-11-gestionar-clientes-contexto.md) | Metodología 3-3-3, aislamiento por carpetas, contratos entre sesiones, Kanban Dashboard maestro, Vercel Drop |
+| 12 | [De Vibe Coding a Vibe Marketing](curso-vibe-coding/clases/clase-12-vibe-marketing.md) | Forge Studio, pipeline de 6 fases, carruseles a costo $0, stack híbrido nube/local |
+| 13 | [El Golden Path del Vibe Coding: Fable 5 vs Opus 4.8 en Vivo](curso-vibe-coding/clases/clase-13-golden-path-fable-vs-opus.md) | Blueprint único, stack Next.js/Supabase/shadcn, benchmark Fable 5 vs Opus 4.8 |
+
+### Bonos
+
+| Bono | Descripción |
+|------|-------------|
+| [Forge Studio Lite](bonos/forge-studio/) | Estudio de contenido automatizado, carruseles a costo $0 y composición HTML/video |
 
 ---
 

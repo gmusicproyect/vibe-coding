@@ -1,7 +1,7 @@
 # Clase 08 — UX + Seguridad en Web Apps con IA
 
 **Tags:** `UX` `Seguridad OWASP` `Supabase RLS` `Web Apps`
-**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 04](clase-04-adversarial-review.md) · [Clase 07](clase-07-ui-tokens.md)
+**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 04](clase-04-adversarial-review.md) · [Clase 07](clase-07-ui-tokens.md) · [Clase 13](clase-13-golden-path-fable-vs-opus.md)
 
 ---
 

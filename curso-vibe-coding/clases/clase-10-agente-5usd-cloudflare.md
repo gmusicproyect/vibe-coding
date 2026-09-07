@@ -1,7 +1,7 @@
 # Clase 10 — El Agente de 5 USD que reemplaza tu flujo entero
 
 **Tags:** `Cloudflare Workers` `Agents as a Service` `OpenRouter` `Wrangler CLI`
-**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 08](clase-08-ux-seguridad.md) · [Clase 09](clase-09-claude-code-desde-cero.md)
+**Conecta con:** [Clase 01](clase-01-stack-vibe-coding.md) · [Clase 08](clase-08-ux-seguridad.md) · [Clase 09](clase-09-claude-code-desde-cero.md) · [Clase 12](clase-12-vibe-marketing.md)
 
 ---
 
