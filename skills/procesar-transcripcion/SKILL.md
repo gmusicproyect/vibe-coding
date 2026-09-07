@@ -16,6 +16,7 @@ Siempre que llegue una transcripción cruda (grabación, audio, notas) de una cl
 ## Prerequisitos
 
 - [ ] Transcripción cruda del contenido
+- [ ] **Confirmar que el contenido pertenece al curso Vibe Coding y no al curso Claude Code** (repo hermano `imperioagentico`). Ambos cursos comparten instructor y muchos temas se solapan (Claude Code, MCP, agentes) — si el título o el contenido no queda claro a qué curso pertenece, preguntar antes de archivar. Un caso real: dos clases sobre Forge Studio y benchmarks de modelos se archivaron por error en `imperioagentico` cuando eran de Vibe Coding — el error solo se detectó al cruzar contra la lista oficial de sesiones.
 - [ ] Acceso de lectura a `curso-vibe-coding/clases/` y `skills/` para no duplicar algo que ya existe
 - [ ] Acceso de escritura al repo local (sin permiso de commit/push — ver Paso 2)
 
