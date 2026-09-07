@@ -1,0 +1,177 @@
+{
+  "_meta": "Template del schema. Reemplaza los valores [PLACEHOLDER]. SECCIONES OPCIONALES: 'fundamentals' y 'crosscutting' pueden eliminarse por completo si no aplican (el dashboard oculta su sección). Campos opcionales de project: 'slug' y 'eyebrow'. Puedes dejar este campo _meta — el dashboard ignora claves desconocidas. Schema completo y reglas: ver references/schema.md.",
+
+  "project": {
+    "name": "[CLIENTE] — [PROYECTO]",
+    "client": "[CLIENTE]",
+    "deal": "[DESCRIPCIÓN_DEL_DEAL]",
+    "dealAmount": "$[MONTO] USD",
+    "kickoff": "[YYYY-MM-DD]",
+    "estimatedWeeks": 12,
+    "lastUpdate": "[YYYY-MM-DD]",
+    "slug": "[opcional: slug-corto-del-proyecto] — si se omite, se deriva de 'name' para la key de LocalStorage",
+    "eyebrow": "[opcional: texto del eyebrow, ej. 'Dashboard maestro · Cliente'] — si se omite, usa 'Dashboard maestro'"
+  },
+
+  "tools": {
+    "Airtable": { "color": "#fbbf24", "icon": "🗂️" },
+    "n8n": { "color": "#ef4444", "icon": "⚙️" },
+    "Supabase": { "color": "#10b981", "icon": "🗃️" },
+    "Next.js": { "color": "#60a5fa", "icon": "▲" },
+    "Postgres": { "color": "#6366f1", "icon": "🐘" },
+    "OpenAI": { "color": "#34d399", "icon": "🤖" },
+    "Stripe": { "color": "#8b5cf6", "icon": "💳" },
+    "Vercel": { "color": "#ffffff", "icon": "▲" }
+  },
+
+  "statusLabels": {
+    "done": { "label": "Completado", "color": "#10b981", "icon": "✅" },
+    "in_progress": { "label": "En progreso", "color": "#fbbf24", "icon": "🟡" },
+    "pending": { "label": "Pendiente", "color": "#6b7280", "icon": "⏳" },
+    "blocked": { "label": "Bloqueado", "color": "#ef4444", "icon": "🔴" }
+  },
+
+  "blockers": [
+    {
+      "id": "BLK-001",
+      "title": "[Título corto del bloqueador]",
+      "owner": "[Quién lo resuelve = a quién le haces el pedimento]",
+      "since": "[YYYY-MM-DD]",
+      "severity": "critical",
+      "description": "[Descripción concreta de qué está bloqueado y por qué]",
+      "affects": ["M1-T01"]
+    },
+    {
+      "id": "BLK-002",
+      "title": "[Ejemplo de bloqueador YA RESUELTO]",
+      "owner": "[Quién lo resolvió]",
+      "since": "[YYYY-MM-DD]",
+      "resolvedAt": "[YYYY-MM-DD]",
+      "severity": "resolved",
+      "description": "Marcar severity:'resolved' + resolvedAt cuando se resuelve. NO borrar el bloqueador — queda en el histórico. El banner lo oculta de inmediato al estar 'resolved' (también se auto-oculta cualquier bloqueador cuando todas sus tareas afectadas están 'done').",
+      "affects": ["FUND-EX-01"]
+    }
+  ],
+
+  "fundamentals": {
+    "title": "Fundamentos · Infraestructura previa",
+    "description": "OPCIONAL — Trabajo de base que habilita las fases. Elimina todo el objeto 'fundamentals' si el proyecto arranca de cero sin trabajo previo (el dashboard oculta la sección).",
+    "groups": [
+      {
+        "id": "FUND-EX",
+        "title": "[Categoría 1 — ej. Setup inicial]",
+        "tasks": [
+          {
+            "id": "FUND-EX-01",
+            "title": "[Tarea de fundamento]",
+            "tools": ["Airtable"],
+            "status": "done",
+            "notes": "[Notas opcionales — usar como log append-only con fechas]",
+            "completedAt": "[YYYY-MM-DD]"
+          }
+        ]
+      }
+    ]
+  },
+
+  "phases": [
+    {
+      "id": "M1",
+      "number": 1,
+      "name": "[Nombre de la Fase 1]",
+      "subtitle": "[Tagline corto]",
+      "color": "#3b82f6",
+      "description": "[Descripción 1-2 líneas de qué entrega esta fase]",
+      "tools": ["Airtable", "Supabase", "n8n"],
+      "hoursEstimated": 35,
+      "deliverables": [
+        "[Entregable 1]",
+        "[Entregable 2]",
+        "[Entregable 3]"
+      ],
+      "tasks": [
+        {
+          "id": "M1-T01",
+          "title": "[Título de la tarea]",
+          "description": "[Descripción larga visible en modal]",
+          "tools": ["Airtable"],
+          "hoursEstimated": 5,
+          "status": "blocked",
+          "notes": "",
+          "blocker": "BLK-001"
+        },
+        {
+          "id": "M1-T02",
+          "title": "[Siguiente tarea]",
+          "description": "[Descripción]",
+          "tools": ["Supabase"],
+          "hoursEstimated": 6,
+          "status": "pending",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "number": 2,
+      "name": "[Nombre de la Fase 2]",
+      "subtitle": "[Tagline]",
+      "color": "#10b981",
+      "description": "[Descripción]",
+      "tools": ["Next.js"],
+      "hoursEstimated": 20,
+      "deliverables": ["[Entregable]"],
+      "tasks": [
+        {
+          "id": "M2-T01",
+          "title": "[Tarea]",
+          "description": "[Descripción]",
+          "tools": ["Next.js"],
+          "hoursEstimated": 4,
+          "status": "pending",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "number": 3,
+      "name": "[Nombre de la Fase 3]",
+      "subtitle": "[Tagline]",
+      "color": "#f59e0b",
+      "description": "[Descripción]",
+      "tools": ["n8n"],
+      "hoursEstimated": 15,
+      "deliverables": ["[Entregable]"],
+      "tasks": []
+    },
+    {
+      "id": "M4",
+      "number": 4,
+      "name": "[Nombre de la Fase 4]",
+      "subtitle": "[Tagline]",
+      "color": "#ef4444",
+      "description": "[Descripción]",
+      "tools": [],
+      "hoursEstimated": 10,
+      "deliverables": ["[Entregable]"],
+      "tasks": []
+    }
+  ],
+
+  "crosscutting": {
+    "title": "Tareas transversales",
+    "description": "OPCIONAL — Trabajo que sirve a múltiples fases (dashboard, alertas, training, entrega). Elimina todo el objeto 'crosscutting' si no aplica (el dashboard oculta la sección).",
+    "tasks": [
+      {
+        "id": "CC-T01",
+        "title": "[Tarea transversal]",
+        "description": "[Descripción]",
+        "tools": ["Next.js"],
+        "hoursEstimated": 6,
+        "status": "pending",
+        "notes": ""
+      }
+    ]
+  }
+}

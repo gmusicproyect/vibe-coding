@@ -31,6 +31,8 @@ vibe-coding/
 | 07 | [UI que no grita IA: componentes y design tokens](curso-vibe-coding/clases/clase-07-ui-tokens.md) | UI sin AI Slop, Design Tokens en 3 capas, Tailwind v4 @theme, brand.json, Showcase/UI Kit, Criterio CLI, Agentation |
 | 08 | [UX + Seguridad en Web Apps con IA](curso-vibe-coding/clases/clase-08-ux-seguridad.md) | Historia B-17 y UX, 4 estados obligatorios, 6 reglas de formularios, RLS en Supabase, prevención service_role en frontend |
 | 09 | [Claude Code desde Cero: Skills, MCPs y seguridad](curso-vibe-coding/clases/clase-09-claude-code-desde-cero.md) | Higiene de contexto, Prompt Caching (5 min), subagentes con fork, /insights, SDD/MoSCoW, handoff.md, OWASP y RLS |
+| 10 | [El Agente de 5 USD que reemplaza tu flujo entero](curso-vibe-coding/clases/clase-10-agente-5usd-cloudflare.md) | Cloudflare Workers, Agents as a Service (AaaS), OpenRouter, Durable Objects, Wrangler CLI, Rate Limiting |
+| 11 | [Cómo gestionar clientes y contexto con Claude Code](curso-vibe-coding/clases/clase-11-gestionar-clientes-contexto.md) | Metodología 3-3-3, aislamiento por carpetas, contratos entre sesiones, Kanban Dashboard maestro, Vercel Drop |
 
 ---
 
