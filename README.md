@@ -39,6 +39,7 @@ vibe-coding/
 | 13 | [El Golden Path del Vibe Coding: Fable 5 vs Opus 4.8 en Vivo](curso-vibe-coding/clases/clase-13-golden-path-fable-vs-opus.md) | Blueprint único, stack Next.js/Supabase/shadcn, benchmark Fable 5 vs Opus 4.8 |
 | 14 | [Tu agente programa solo mientras duermes](curso-vibe-coding/clases/clase-14-tu-agente-programa-solo-duermes.md) | Orquestación 24/7 (Hermes/VPS), compuertas Git en ramas, N8N vs código puro, Sentry auto-fix |
 | 15 | [Arneses Conectados: Hermes + Claude Code en Vivo](curso-vibe-coding/clases/clase-15-arneses-conectados-hermes-claude-code.md) | Harness Engineering (5 piezas), Print Mode `claude -p`, Tmux, ACP, Claude Agents SDK |
+| 16 | [Domina GitHub como un experto](curso-vibe-coding/clases/clase-16-domina-github-experto.md) | Git vs GitHub, jerarquía Repo-Epics-Issues, ramas protegidas, Actions CI/CD |
 
 ### Bonos
 
