@@ -110,6 +110,28 @@ No basta con que el ejercicio sea replicable — tiene que probar específicamen
 2. Verifica que el Ejercicio 1 ejercite exactamente esa afirmación, no una tarea relacionada pero más superficial. Ejemplo real de este curso: una clase insistía en que los hooks son "paredes infranqueables" en las que hay que confiar más que en instrucciones de texto, pero el ejercicio solo pedía cambiar una configuración de texto — nunca construir un hook. Eso es un ejercicio que no prueba el propósito, aunque sea replicable.
 3. Si el ejercicio no ejercita la afirmación central, reescríbelo para que sí lo haga — aunque eso signifique que sea más largo o más técnico que el resto.
 
+### Paso 5.5 — Autoverificación obligatoria antes de entregar (no delegar esto a Claude)
+
+Este paso reemplaza la corrección manual que antes hacía Claude sobre cada clase entregada. A partir de ahora, quien procesa la transcripción (Google/Antigravity) tiene que dejar el archivo ya corregido — Claude solo aprueba o rechaza, no reescribe.
+
+**A. Checklist estructural — compara literalmente contra este esqueleto antes de guardar:**
+- [ ] Título usa `—` (em dash), no `:` — `# Clase NN — Título`
+- [ ] Tiene la línea `**Tags:**` con 2-4 tags
+- [ ] Tiene la línea `**Conecta con:**` con 1-3 clases relacionadas (revisar `curso-vibe-coding/clases/` para encontrar conexiones reales por tema, no inventar)
+- [ ] El encabezado del ejercicio es exactamente `## 🎯 Ejercicio práctico` (con emoji)
+- [ ] El encabezado del tip es exactamente `## 💡 Tip` (con emoji, nunca "Tip pro" ni variantes)
+- [ ] El encabezado del error es exactamente `## ⚠️ Error común` (con emoji)
+- [ ] Cada sección de nivel `##` está separada por `---`
+- [ ] Ningún bloque de código presenta como literal (import exacto, nombre de paquete, parámetros exactos) algo que la fuente solo describió de palabra sin mostrarlo en pantalla — si no se vio el código, se describe en prosa o se marca `[PENDIENTE: confirmar sintaxis exacta]`
+
+Si un solo ítem de esta lista falla, el archivo no está listo — corregirlo antes de entregar, no después.
+
+**B. Autoverificación de exactitud factual — antes de escribir cualquier comparación, tabla o cifra, vuelve a la transcripción y confirma:**
+- Si hay una tabla comparando dos cosas (dos modelos, dos configuraciones, dos variantes de una herramienta), **cada celda tiene que estar atada a la variante correcta**. Error real que ya pasó: una clase comparaba "Modelo A" vs "Modelo B" y la fila de velocidad decía que B fue más rápido en general, cuando en realidad solo una de las dos sub-variantes de B fue más rápida — la otra fue la más lenta de todas. No agrupar ni promediar variantes distintas en una sola celda si la fuente las trató por separado.
+- No atribuir a un elemento un mérito o defecto que en la fuente lo tuvieron ambos por igual (ej. decir "solo A validó X" cuando la transcripción muestra que A y B validaron X correctamente).
+- Cifras, nombres técnicos y resultados de pruebas en vivo (tiempos, tokens, cantidad de pruebas, cantidad de personas/países en un caso real) deben copiarse tal cual aparecen en la fuente, no redondear ni inventar para que suene mejor.
+- Si un término suena a jerga de marketing o industria (ej. "money shots", "primeros 3 segundos") pero no se pronunció literalmente en la fuente, no presentarlo como si el instructor lo hubiera dicho — usar una descripción neutra del mismo concepto o marcarlo como interpretación propia.
+
 ### Paso 6 — Actualizar los índices
 
 En el mismo lote de cambios:
@@ -135,6 +157,10 @@ En el mismo lote de cambios:
 | Índice no actualizado | Se creó el archivo pero no se tocó el README | Repetir el Paso 6 |
 | Paso práctico narrado en vez de detallado (ej. "configuró el proyecto" sin decir cómo) | Se priorizó la síntesis por encima de la replicabilidad | Volver a la fuente y extraer el comando/click/configuración exacta que se mostró |
 | Ejercicio replicable pero que no prueba lo central de la clase | Se eligió la tarea más fácil de ejercitar en vez de la que el instructor más enfatizó | Aplicar el Paso 5: identificar la afirmación que se repite en Idea central/Tip/Error común y asegurarse de que el ejercicio la ejercite directamente |
+| Título con `:` en vez de `—`, faltan Tags/Conecta con, o encabezados sin emoji | No se comparó el archivo final contra el esqueleto exacto del Paso 3 | Aplicar el checklist del Paso 5.5.A antes de guardar, no después |
+| Tabla comparativa atribuye un resultado a la variante equivocada (ej. "Fable fue más rápido" cuando solo una de sus dos sub-variantes lo fue) | Se promedió o agrupó información que la fuente trató por separado | Releer la transcripción por cada celda de la tabla; nunca generalizar de una sub-variante a la categoría completa |
+| Código o sintaxis exacta (imports, nombres de parámetros) presentada como si fuera literal de la fuente, cuando el instructor solo lo describió de palabra | Se completó el hueco con una reconstrucción plausible en vez de marcarla como tal | Aplicar el Paso 5.5.A: si no se vio en pantalla, describir en prosa o usar `[PENDIENTE: confirmar sintaxis exacta]` |
+| Detalle o cifra que suena verosímil pero no aparece en la transcripción (ej. un término de marketing, un porcentaje, un límite técnico) | Se rellenó con conocimiento general del tema en vez de ceñirse a lo dicho en la fuente | Aplicar el Paso 5.5.B: cada cifra y término técnico se coteja contra la transcripción antes de escribirlo |
 
 ---
 
