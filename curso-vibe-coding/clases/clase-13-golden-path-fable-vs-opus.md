@@ -44,10 +44,10 @@ En una prueba One-Shot para construir un ERP de inventario con dashboard, KPIs, 
 
 | Criterio | Opus 4.8 (Sin / Con Arnés) | Fable 5 (Sin / Con Arnés) | Veredicto |
 |----------|----------------------------|---------------------------|-----------|
-| **Velocidad de entrega** | ~45-50 min (ambos entornos) | **~15-18 min** (Fable con arnés terminó primero) | **Fable 5** demostró mayor rapidez en ejecución multi-workflow |
+| **Velocidad de entrega** | ~50 min aprox. (sin datos exactos para la variante con arnés) | **Con arnés fue el primero en terminar** (~15-18 min) — pero **sin arnés fue el más lento de los cuatro**, tardó mucho en un workflow | La velocidad de Fable dependió por completo de tener o no el arnés, no es una ventaja del modelo en sí |
 | **Consumo de tokens** | 152k (sin arnés) / 183k (con arnés) | 150k (sin arnés) / 150k (con arnés) | Consumo similar (~15% ventana 1M), pero Fable es 2x más caro por token |
-| **Acabado visual (UI)** | Tablas y cards comprimidos con scroll | Ocupó el 100% de la pantalla; vistas fluidas | **Fable 5** entregó un layout más armónico y ordenado |
-| **Rigor funcional** | Validó dropdown de unidades y stock negativo | Dejó la unidad de medida como texto libre manual | **Opus 4.8** fue superior en validación de reglas de negocio |
+| **Acabado visual (UI)** | Tablas y cards comprimidos con scroll en ambas variantes | La variante **con arnés** ocupó el 100% de la pantalla sin scroll; la variante sin arnés tuvo el mismo problema de espacio que Opus | El arnés (favicon, layout completo) marcó más diferencia que el modelo |
+| **Rigor funcional** | Sí tuvo dropdown de unidades de medida | **Ambas variantes** dejaron la unidad de medida como texto libre manual — "autogol" según Carlos. Ambos modelos sí validaron correctamente el stock disponible (botón deshabilitado al exceder cantidad) | **Opus 4.8** fue superior únicamente en el dropdown de unidades; en validación de stock ambos empataron |
 
 ---
 

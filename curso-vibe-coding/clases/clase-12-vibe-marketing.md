@@ -28,7 +28,7 @@ El *Vibe Marketing* traslada la filosofía del vibe coding a la producción audi
 
 El orquestador no trabaja solo; delega la validación en 4 subagentes especializados antes de entregar:
 - **Director:** Planifica escenas, orquesta las llamadas y gestiona el loop de correcciones.
-- **Estratega de Contenido:** Valida que el hook capture la atención en los primeros 3 segundos y define el CTA.
+- **Estratega de Contenido:** Genera los hooks y define el CTA según la audiencia y formato.
 - **Crítico de Continuidad:** Detecta el *drift* visual entre tomas consecutivas y evalúa consistencia de personajes.
 - **Brand Designer:** Audita la adherencia estricta a `brand.json`, `voice.json` y los contrastes cromáticos en CSS.
 
