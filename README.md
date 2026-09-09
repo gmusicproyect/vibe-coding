@@ -40,6 +40,9 @@ vibe-coding/
 | 14 | [Tu agente programa solo mientras duermes](curso-vibe-coding/clases/clase-14-tu-agente-programa-solo-duermes.md) | Orquestación 24/7 (Hermes/VPS), compuertas Git en ramas, N8N vs código puro, Sentry auto-fix |
 | 15 | [Arneses Conectados: Hermes + Claude Code en Vivo](curso-vibe-coding/clases/clase-15-arneses-conectados-hermes-claude-code.md) | Harness Engineering (5 piezas), Print Mode `claude -p`, Tmux, ACP, Claude Agents SDK |
 | 16 | [Domina GitHub como un experto](curso-vibe-coding/clases/clase-16-domina-github-experto.md) | Git vs GitHub, jerarquía Repo-Epics-Issues, ramas protegidas, Actions CI/CD |
+| 17 | [Hermes vs OpenClaw + Skills en Claude Code](curso-vibe-coding/clases/clase-17-hermes-vs-openclaw-skills.md) | Hermes vs OpenClaw, memoria y automejora, skills usuario vs proyecto, higiene de contexto |
+| 18 | [Cómo estructurar sesiones y agentes en Claude Code](curso-vibe-coding/clases/clase-18-estructurar-sesiones-agentes.md) | Sprints y prompt cache (5 min), cascada Blueprint-Plan-Tasks, modularizar CLAUDE.md, subagentes |
+| 19 | [Claude Code + N8N: Kit, MCP y Skills desde 0](curso-vibe-coding/clases/clase-19-claude-code-n8n-kit.md) | n8n-automation-kit, conexión MCP, Playwright persistente, workflows deterministas vs AI, Make a n8n |
 
 ### Bonos
 
