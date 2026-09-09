@@ -43,6 +43,7 @@ vibe-coding/
 | 17 | [Hermes vs OpenClaw + Skills en Claude Code](curso-vibe-coding/clases/clase-17-hermes-vs-openclaw-skills.md) | Hermes vs OpenClaw, memoria y automejora, skills usuario vs proyecto, higiene de contexto |
 | 18 | [Cómo estructurar sesiones y agentes en Claude Code](curso-vibe-coding/clases/clase-18-estructurar-sesiones-agentes.md) | Sprints y prompt cache (5 min), cascada Blueprint-Plan-Tasks, modularizar CLAUDE.md, subagentes |
 | 19 | [Claude Code + N8N: Kit, MCP y Skills desde 0](curso-vibe-coding/clases/clase-19-claude-code-n8n-kit.md) | n8n-automation-kit, conexión MCP, Playwright persistente, workflows deterministas vs AI, Make a n8n |
+| 20 | [Cerramos Núcleo: Deploy, GitHub y pruebas en vivo](curso-vibe-coding/clases/clase-20-cerramos-nucleo-deploy-github.md) | Definition of Done con Playwright MCP, InsForge vs Supabase, Context 7, ramas atómicas y RLS |
 
 ### Bonos
 
