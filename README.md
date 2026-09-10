@@ -55,6 +55,7 @@ vibe-coding/
 | 29 | [Dominando Google AntiGravity: El Manual del 1%](curso-vibe-coding/clases/clase-29-dominando-antigravity-manual-del-1.md) | 4 pilares (Planificación, Orquestación, Ecosistema, Personalización), Agent Manager, MCPs, Workflows y Reglas |
 | 30 | [Supabase y MCP: Conexiones Dinámicas en Antigravity](curso-vibe-coding/clases/clase-30-supabase-mcp-conexiones-antigravity.md) | Supabase como backend relacional, 4 métodos de conexión MCP (GitHub/Supabase/Vercel/n8n), regla de oro de verificación |
 | 31 | [Primera Win: Clon de Linktree con Antigravity y Deploy en Vercel](curso-vibe-coding/clases/clase-31-primera-win-clon-linktree-antigravity.md) | Win rápida 0 a 100, deploy en Vercel, QA con navegador |
+| 32 | [Mejores Prácticas, Metaprompting y Maquetación del MVP](curso-vibe-coding/clases/clase-32-metaprompting-prd-maquetacion-mvp.md) | Metaprompting, PRD como "biblia", 5 reglas de trabajo por features, flujo Gem→Google AI Studio→GitHub→Antigravity |
 
 ### Bonos
 
