@@ -47,6 +47,7 @@ vibe-coding/
 | 21 | [Cómo no quemar tokens construyendo una app real](curso-vibe-coding/clases/clase-21-como-no-quemar-tokens.md) | Fast Phase Prompt Caching (<5 min), poda de MCPs, umbrales de saturación, Modo Yunque vs Forja y Blueprint maestro |
 | 22 | [Construimos una app desde 0 con Claude Code](curso-vibe-coding/clases/clase-22-construimos-app-desde-cero.md) | Viability Check, PDR y Happy Path, Tech Specs con índices trigram, auditoría cruzada con Codex y El Crisol |
 | 23 | [Claude Code: estructura de proyectos y skills](curso-vibe-coding/clases/clase-23-estructura-proyectos-skills.md) | Jerarquía bash-safe, Claude AI vs Cowork vs Code, Remote Control (/rc), scopes de skills y Agentation |
+| 24 | [Claude Code vs. OpenClaw: Agentes y Subagentes](curso-vibe-coding/clases/clase-24-claude-code-vs-openclaw-agentes.md) | Agentes en Claude Code (/agents), subagentes en OpenClaw, Remote SSH en Antigravity y auditoría de SOUL.md |
 
 ### Bonos
 
