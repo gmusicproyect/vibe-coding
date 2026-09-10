@@ -49,6 +49,7 @@ vibe-coding/
 | 23 | [Claude Code: estructura de proyectos y skills](curso-vibe-coding/clases/clase-23-estructura-proyectos-skills.md) | Jerarquía bash-safe, Claude AI vs Cowork vs Code, Remote Control (/rc), scopes de skills y Agentation |
 | 24 | [Claude Code vs. OpenClaw: Agentes y Subagentes](curso-vibe-coding/clases/clase-24-claude-code-vs-openclaw-agentes.md) | Agentes en Claude Code (/agents), subagentes en OpenClaw, Remote SSH en Antigravity y auditoría de SOUL.md |
 | 25 | [Antigravity, Claude Code y OpenClaw](curso-vibe-coding/clases/clase-25-antigravity-claude-code-openclaw.md) | Vibe Coding, Antigravity multi-modelo (Claude + Kilo/Codex + Gemini), visibilidad de skills y /models en OpenClaw |
+| 26 | [Cómo Proteger OpenClaw en un VPS con Tailscale](curso-vibe-coding/clases/clase-26-proteger-openclaw-vps-tailscale.md) | Riesgo de exposición pública (Shodan/Censys), VPN privada con Tailscale, cierre de puerto con UFW |
 
 ### Bonos
 
