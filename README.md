@@ -58,6 +58,7 @@ vibe-coding/
 | 32 | [Mejores Prácticas, Metaprompting y Maquetación del MVP](curso-vibe-coding/clases/clase-32-metaprompting-prd-maquetacion-mvp.md) | Metaprompting, PRD como "biblia", 5 reglas de trabajo por features, flujo Gem→Google AI Studio→GitHub→Antigravity |
 | 33 | [Clonar el Repo, Plan de Desarrollo, Localhost y Primeros Fixes](curso-vibe-coding/clases/clase-33-clonar-repo-plan-desarrollo-local-fixes.md) | Clonación GitHub, Planning Mode con PRD, .env.local (AI Studio + Supabase), Vite dev y browser QA para fixes visuales |
 | 34 | [Supabase Real: Creación de Tablas SQL, Guardado y Fixes de UI](curso-vibe-coding/clases/clase-34-supabase-tablas-sql-guardado-fixes.md) | Permisos MCP vs SQL Editor, esquema DDL (clients/diagnostics/quotes), fixes de share link y dark mode en wizard |
+| 35 | [Arquitectura Híbrida con n8n, Email Composer y Buenas Prácticas con Git](curso-vibe-coding/clases/clase-35-arquitectura-hibrida-n8n-email-composer-git.md) | Modelo híbrido (UI Antigravity + Webhook n8n), Email Composer con IA, API keys n8n y commits atómicos con Git |
 
 ### Bonos
 
