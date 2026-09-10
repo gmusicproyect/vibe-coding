@@ -51,6 +51,7 @@ vibe-coding/
 | 25 | [Antigravity, Claude Code y OpenClaw](curso-vibe-coding/clases/clase-25-antigravity-claude-code-openclaw.md) | Vibe Coding, Antigravity multi-modelo (Claude + Kilo/Codex + Gemini), visibilidad de skills y /models en OpenClaw |
 | 26 | [Cómo Proteger OpenClaw en un VPS con Tailscale](curso-vibe-coding/clases/clase-26-proteger-openclaw-vps-tailscale.md) | Riesgo de exposición pública (Shodan/Censys), VPN privada con Tailscale, cierre de puerto con UFW |
 | 29 | [Dominando Google AntiGravity: El Manual del 1%](curso-vibe-coding/clases/clase-29-dominando-antigravity-manual-del-1.md) | 4 pilares (Planificación, Orquestación, Ecosistema, Personalización), Agent Manager, MCPs, Workflows y Reglas |
+| 30 | [Supabase y MCP: Conexiones Dinámicas en Antigravity](curso-vibe-coding/clases/clase-30-supabase-mcp-conexiones-antigravity.md) | Supabase como backend relacional, 4 métodos de conexión MCP (GitHub/Supabase/Vercel/n8n), regla de oro de verificación |
 
 ### Bonos
 
