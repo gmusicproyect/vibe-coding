@@ -46,6 +46,7 @@ vibe-coding/
 | 20 | [Cerramos Núcleo: Deploy, GitHub y pruebas en vivo](curso-vibe-coding/clases/clase-20-cerramos-nucleo-deploy-github.md) | Definition of Done con Playwright MCP, InsForge vs Supabase, Context 7, ramas atómicas y RLS |
 | 21 | [Cómo no quemar tokens construyendo una app real](curso-vibe-coding/clases/clase-21-como-no-quemar-tokens.md) | Fast Phase Prompt Caching (<5 min), poda de MCPs, umbrales de saturación, Modo Yunque vs Forja y Blueprint maestro |
 | 22 | [Construimos una app desde 0 con Claude Code](curso-vibe-coding/clases/clase-22-construimos-app-desde-cero.md) | Viability Check, PDR y Happy Path, Tech Specs con índices trigram, auditoría cruzada con Codex y El Crisol |
+| 23 | [Claude Code: estructura de proyectos y skills](curso-vibe-coding/clases/clase-23-estructura-proyectos-skills.md) | Jerarquía bash-safe, Claude AI vs Cowork vs Code, Remote Control (/rc), scopes de skills y Agentation |
 
 ### Bonos
 
