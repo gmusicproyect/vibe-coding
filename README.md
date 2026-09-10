@@ -60,6 +60,7 @@ vibe-coding/
 | 34 | [Supabase Real: Creación de Tablas SQL, Guardado y Fixes de UI](curso-vibe-coding/clases/clase-34-supabase-tablas-sql-guardado-fixes.md) | Permisos MCP vs SQL Editor, esquema DDL (clients/diagnostics/quotes), fixes de share link y dark mode en wizard |
 | 35 | [Arquitectura Híbrida con n8n, Email Composer y Buenas Prácticas con Git](curso-vibe-coding/clases/clase-35-arquitectura-hibrida-n8n-email-composer-git.md) | Modelo híbrido (UI Antigravity + Webhook n8n), Email Composer con IA, API keys n8n y commits atómicos con Git |
 | 36 | [Supabase Auth, Verificación por Email y Deploy a Vercel](curso-vibe-coding/clases/clase-36-supabase-auth-email-verification-deploy-vercel.md) | Supabase Auth vs BetterAuth, confirmación forzosa por email, inyección de env vars y deploy a producción en Vercel |
+| 37 | [Bonus: Convertir el MVP en una PWA (Progressive Web App)](curso-vibe-coding/clases/clase-37-bonus-convertir-mvp-en-pwa.md) | Web App Manifest, iconografía con IA, layout mobile-first, higiene para repo público e instalación en iPhone/Android |
 
 ### Bonos
 
