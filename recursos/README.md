@@ -17,3 +17,11 @@ Plantillas reutilizables para nuevos proyectos con Claude Code, tomadas del repo
 | Archivo | Descripción |
 |---------|-------------|
 | [vulnerabilidades-clawdbot-video.md](./transcripciones/vulnerabilidades-clawdbot-video.md) | Transcripción traducida y sincronizada del video sobre vulnerabilidades y seguridad en Clawdbot / OpenClaw |
+
+---
+
+## Gems y Herramientas de IA
+
+| Archivo | Descripción |
+|---------|-------------|
+| [artemis-catalogo-capacidades.md](./gems/artemis-catalogo-capacidades.md) | Catálogo completo de capacidades del Gem "Artemis" (Gemini) usado en el curso para generar PRDs de vibe coding |

@@ -13,7 +13,7 @@ Antes de tocar Antigravity, el trabajo serio empieza con metaprompting: usar IA 
 
 ## 1. Metaprompting y el PRD
 
-- **Metaprompting:** método para refinar prompts con IA. En lugar de escribir un prompt a mano y esperar que funcione, le pides a la IA que analice tu idea, identifique huecos o ambigüedades, y te genere el mejor prompt posible para construir el producto.
+- **Metaprompting:** método para refinar prompts con IA. En lugar de escribir un prompt a mano y esperar que funcione, le pides a la IA que analice tu idea, identifique huecos o ambigüedades, y te genere el mejor prompt posible para construir el producto. El Gem usado en el curso para esto ("Artemis") tiene su [catálogo completo de capacidades documentado aparte](../../recursos/gems/artemis-catalogo-capacidades.md).
 - **PRD (Product Requirements Document):** documento que define visión y objetivo, problema que resuelve, público objetivo, funcionalidades, restricciones, criterios de aceptación, prioridades, métricas de éxito, flujos de usuario, *user stories* (quién, cómo, qué) y tech stack.
 - **Por qué importa:** en vibe coding el PRD no es "algo bonito" — es la referencia principal para que el agente no invente. Mientras más claro y estructurado desde el inicio, mejores resultados.
 - **Ejemplo trabajado en la clase:** *Automation Opportunity Finder*, una app para que freelancers y agencias diagnostiquen negocios, detecten oportunidades de automatización con IA y generen recomendaciones, precios y siguientes pasos para vender servicios.
