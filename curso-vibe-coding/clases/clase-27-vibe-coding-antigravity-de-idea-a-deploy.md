@@ -9,6 +9,8 @@
 
 El Vibe Coding transforma el desarrollo de software al reemplazar la codificación manual por la orquestación en lenguaje natural, guiada por intuición y velocidad bajo la premisa de "crea primero y refina después". En este flujo, Google Antigravity actúa como orquestador multi-agente asistido por Google AI Studio para maquetación rápida, GitHub para control de versiones, Supabase para backend y Vercel para despliegue, optimizado estrictamente para validar MVPs y herramientas internas sin pretender sustituir la arquitectura de producción a gran escala.
 
+**Hoja de ruta del módulo:** el curso construye dos proyectos completos —una landing page tipo Linktree desplegada y funcional, y una app compleja con autenticación, base de datos y automatizaciones de IA corriendo en el backend— y cierra con un bonus sobre cómo convertir el resultado en una Progressive Web App (PWA).
+
 ---
 
 ## 1. El Stack Completo: De Idea a Producción a Costo Cero
