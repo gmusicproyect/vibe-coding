@@ -63,6 +63,7 @@ vibe-coding/
 | 37 | [Bonus: Convertir el MVP en una PWA (Progressive Web App)](curso-vibe-coding/clases/clase-37-bonus-convertir-mvp-en-pwa.md) | Web App Manifest, iconografía con IA, layout mobile-first, higiene para repo público e instalación en iPhone/Android |
 | 38 | [Qué es OpenClaw (ex Clawdbot / Moltbot): Autonomía, Memoria y Riesgos](curso-vibe-coding/clases/clase-38-que-es-openclaw-autonomia-memoria-riesgos.md) | Agente autónomo vs LLM reactivo, auto-creación de herramientas, memoria persistente, riesgos y blindaje en VPS |
 | 39 | [Instalación de OpenClaw en un VPS Limpio: Seguridad, Usuario Aislado y Quickstart](curso-vibe-coding/clases/clase-39-instalacion-openclaw-vps-seguridad.md) | VPS en Hostinger, Ubuntu 24.04 LTS, usuario dedicado sin privilegios de root, instalación oficial y Quick Start |
+| 40 | [Configuración de OpenClaw: Modelo, Telegram, Skills y Servicio Persistente](curso-vibe-coding/clases/clase-40-configuracion-openclaw-telegram-systemd.md) | API Key aislada, BotFather, selección de skills, gateway y persistencia con systemd |
 
 ### Bonos
 
