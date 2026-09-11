@@ -20,6 +20,21 @@ vibe-coding/
 
 ---
 
+## 🚀 Proyectos del curso
+
+Las clases no son solo temas sueltos: varios tramos construyen **un mismo proyecto concreto y replicable** de principio a fin, no solo una habilidad aislada.
+
+| Proyecto | Clases | Qué se construye | Repo / resultado |
+|----------|--------|-------------------|-------------------|
+| **Núcleo** | [20](curso-vibe-coding/clases/clase-20-cerramos-nucleo-deploy-github.md)-[22](curso-vibe-coding/clases/clase-22-construimos-app-desde-cero.md) (con base en [15](curso-vibe-coding/clases/clase-15-arneses-conectados-hermes-claude-code.md)-[19](curso-vibe-coding/clases/clase-19-claude-code-n8n-kit.md)) | App real con Claude Code: harness engineering, Viability Check, PDR/Tech Specs, auditoría cruzada con Codex, Definition of Done y deploy | Demo cerrada en vivo (Claude Code) |
+| **Primera Win: Bio-Link (Nova.ai)** | [31](curso-vibe-coding/clases/clase-31-primera-win-clon-linktree-antigravity.md) | Clon de Linktree neobrutalista de 0 a deploy en menos de 40 min, con captura de leads vía n8n | [`nova-bio-link`](https://github.com/agenciainsigniaia-oss/nova-bio-link) (público, clonable) |
+| **Automation Opportunity Finder** | [32](curso-vibe-coding/clases/clase-32-metaprompting-prd-maquetacion-mvp.md)-[37](curso-vibe-coding/clases/clase-37-bonus-convertir-mvp-en-pwa.md) | MVP completo con Antigravity: PRD/metaprompting → maqueta en Google AI Studio → Supabase (tablas, RLS, Auth) → integración híbrida con n8n → deploy en Vercel → conversión a PWA | [`Automation-Opportunity-Finder.`](https://github.com/agenciainsigniaia-oss/Automation-Opportunity-Finder.) (público, clonable) |
+| **Agente OpenClaw** | [38](curso-vibe-coding/clases/clase-38-que-es-openclaw-autonomia-memoria-riesgos.md)-en curso | Agente autónomo propio: instalación segura en VPS, conexión a Telegram, selección de skills y persistencia como servicio — *módulo en progreso* | VPS propio del alumno |
+
+Cada uno de estos proyectos está pensado para **clonarse y adaptarse** a un caso propio (otro nicho, otro dominio de datos, otro canal de mensajería) usando el mismo patrón enseñado, no solo para mirarlo terminado.
+
+---
+
 ## 🗺️ Clases
 
 | # | Clase | Temas clave |
