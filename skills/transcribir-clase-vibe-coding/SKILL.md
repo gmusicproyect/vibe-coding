@@ -31,6 +31,8 @@ Formato: `clase-NN-slug.md`
 - `NN`: número de clase con dos dígitos (`01`, `02`...)
 - `slug`: 1-3 palabras clave del tema, minúsculas, sin tildes, separadas por guiones
 
+**Antes de asignar `NN`, verificar el número contra el remoto, no solo contra la carpeta local:** correr `git fetch origin && git log origin/main -1 -- README.md` (o revisar directamente `README.md` en GitHub) para confirmar cuál fue la última clase realmente *commiteada* en `main`. Si se generan varias clases seguidas sin esperar a que Claude apruebe y suba cada commit, dos clases pueden terminar con el mismo número (ya pasó: dos archivos `clase-28-*.md` distintos el mismo día). Si hay duda sobre si el número ya está tomado en `main`, usar el siguiente número libre y avisarlo explícitamente en el mensaje de entrega en vez de asumir.
+
 ### Paso 3 — Escribir el archivo con esta estructura exacta
 
 ```markdown
@@ -131,6 +133,9 @@ Si un solo ítem de esta lista falla, el archivo no está listo — corregirlo a
 - No atribuir a un elemento un mérito o defecto que en la fuente lo tuvieron ambos por igual (ej. decir "solo A validó X" cuando la transcripción muestra que A y B validaron X correctamente).
 - Cifras, nombres técnicos y resultados de pruebas en vivo (tiempos, tokens, cantidad de pruebas, cantidad de personas/países en un caso real) deben copiarse tal cual aparecen en la fuente, no redondear ni inventar para que suene mejor.
 - Si un término suena a jerga de marketing o industria (ej. "money shots", "primeros 3 segundos") pero no se pronunció literalmente en la fuente, no presentarlo como si el instructor lo hubiera dicho — usar una descripción neutra del mismo concepto o marcarlo como interpretación propia.
+- **No inventar la causa técnica de un bug o comportamiento cuando la fuente solo muestra el síntoma y el arreglo, no la explicación.** Error real que ya pasó: una clase decía que un botón "editar" no funcionaba porque "carecía de manejador de eventos" — la transcripción nunca explicó por qué fallaba, solo mostró que después de un fix ya funcionaba. Si la fuente no da la causa, describir el síntoma y el arreglo sin inventar el motivo, o marcar `[PENDIENTE: causa no explicada en la fuente]`.
+- **No atribuir a una herramienta una tecnología específica no nombrada en la fuente.** Error real: una clase describía la función de "ver lo que yo veo" de un agente y afirmaba que usaba "una sesión de Playwright/Chromium interna" — ese nombre nunca se dijo en el video, solo se describió el comportamiento observado (halo azul, scroll, capturas). Describir el comportamiento, no la tecnología subyacente, salvo que se nombre explícitamente.
+- **Si la fuente muestra que una lista o alcance se simplificó o se acotó explícitamente, no restaurar la versión larga/inicial.** Error real: un video primero proponía mandar 6 campos en un payload, pero luego el instructor decide explícitamente reducirlo a 3 ("lo único que le tienes que mandar es X, Y y Z"); la clase terminó listando los 6 campos originales, contradiciendo la propia decisión de simplificación que la clase describía. Cuando la fuente corrige o acota algo a mitad de la explicación, el archivo final refleja la versión corregida, no un promedio de ambas.
 
 ### Paso 6 — Actualizar los índices
 
@@ -161,6 +166,10 @@ En el mismo lote de cambios:
 | Tabla comparativa atribuye un resultado a la variante equivocada (ej. "Fable fue más rápido" cuando solo una de sus dos sub-variantes lo fue) | Se promedió o agrupó información que la fuente trató por separado | Releer la transcripción por cada celda de la tabla; nunca generalizar de una sub-variante a la categoría completa |
 | Código o sintaxis exacta (imports, nombres de parámetros) presentada como si fuera literal de la fuente, cuando el instructor solo lo describió de palabra | Se completó el hueco con una reconstrucción plausible en vez de marcarla como tal | Aplicar el Paso 5.5.A: si no se vio en pantalla, describir en prosa o usar `[PENDIENTE: confirmar sintaxis exacta]` |
 | Detalle o cifra que suena verosímil pero no aparece en la transcripción (ej. un término de marketing, un porcentaje, un límite técnico) | Se rellenó con conocimiento general del tema en vez de ceñirse a lo dicho en la fuente | Aplicar el Paso 5.5.B: cada cifra y término técnico se coteja contra la transcripción antes de escribirlo |
+| Dos clases distintas terminan con el mismo número `NN` | Se generó la siguiente clase sin verificar el último commit real en `main` (ej. porque la anterior aún no había sido aprobada/subida) | Aplicar la verificación del Paso 2: `git fetch` y revisar `README.md` en `origin/main` antes de asignar el número |
+| Se inventa la causa de un bug o comportamiento que la fuente no explicó | Se completó el hueco narrativo con una explicación técnica plausible en vez de describir solo lo observado | Aplicar el Paso 5.5.B: si la fuente no da la causa, describir síntoma + arreglo, o marcar `[PENDIENTE: causa no explicada]` |
+| Se nombra una tecnología específica (librería, framework) que la fuente nunca mencionó, solo describió el comportamiento | Se dedujo la tecnología subyacente en vez de ceñirse a lo dicho | Aplicar el Paso 5.5.B: describir el comportamiento observado, no inferir el nombre de la herramienta |
+| Se presenta una versión inicial/larga de algo que la fuente corrigió o acotó explícitamente a mitad de la explicación | Se tomó la primera mención en vez de la versión final decidida por el instructor | Aplicar el Paso 5.5.B: cuando la fuente se corrige a sí misma, el archivo refleja la corrección, no la versión descartada |
 
 ---
 
